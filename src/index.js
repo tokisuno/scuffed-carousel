@@ -86,10 +86,11 @@ function start() {
         intID = setInterval(() => {
             i++;
             removeImage();
-            drawImage(images[i]);  
             if (i > images.length - 1) {
                 i = 0;
             }
+            drawImage(images[i]);  
+            console.log(i);
         }, 1000);
     }
 }
